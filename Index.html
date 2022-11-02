@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Learn and familiarize Hangeul spelling and romanization in a fun way.">
+    <meta name="keywords" content="Hangul, Hangeul, Romanization, Jumble Words">
+    <meta name="author" content="James Paul Espeña">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/DIST/semantic.min.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css"/>
+    <link rel="stylesheet" href="/CSS/dragula.min.css">
+    <link rel="stylesheet" href="/CSS/animate.min.css">
+    <link rel="stylesheet" href="/CSS/override.css">
+    <link rel="stylesheet" href="/CSS/sweetalert2.min.css">    
+    <script src="/JS/jquery-3.1.1.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/IMG/hangeul.jpg">
+   
+
+
+    <!--Start of Title-->
+    <title>K-Jumble Game</title>
+</head>
+<body onload="page_load();">
+
+
+    <!--Confetti for correct answer-->
+    <canvas id="confetti"></canvas>
+
+    <div id="hangul_helper"></div>
+
+
+    <div id="container_attempts">
+        <i class="fa-solid fa-heart-pulse" id="heart_pulse"></i><i class="fa-solid fa-xmark"></i> 
+        <label for="heart_pulse" id="label_life_new" class="counter">3</label>       
+    </div>
+    
+
+    <a href="#"><i class="fa-solid fa-bars"></i></a>    
+    <!--Will be invisble and only needed for fetch of alert-->
+    <div id="invisible">       
+        <div id="english_meaning"></div>
+        <div id="romanized"></div>
+    </div><!--End of Invisible DIV-->
+  
+
+     <!--Main Container for display-->
+    <div id="container_hangul">
+        <p id="hangul"></p>
+    </div>
+    <br>
+
+     <!--Main div for Drag and Drop-->
+     <div class="wrapper"> 
+        <div id="left_drag">  <!--This is the left div for drag-->
+        </div>      <!--This is the left div for drag-->
+        <div id="right_wrapper">
+            <div id="right_drag">  <!--This is the Right div for drag-->
+            </div>  <!--This is the right div for drag-->           
+        </div> 
+
+        <!--button container-->
+        <br>
+        <div id="btn_container">
+            <button class="ui primary button" id="answer_btn">
+                <i class="paper plane icon"></i>Submit
+            </button>       
+            <button class="ui red button" id="helper_btn">
+                <i class="medkit icon"></i>Hangeul Helper</button>
+        </div>    <!--END of button container-->      
+    </div>
+
+
+   
+    
+    <!--Side Navigation -->
+
+    <div class="ui left demo vertical inverted sidebar labeled icon menu dimmed">   
+        <a class="item" id="language_Icon">
+            <i class="language icon"></i>
+          About
+        </a>
+        <a class="item" id="instruction">
+            <i class="fa-solid fa-person-chalkboard"></i>
+          Instruction
+        </a>
+        <a href="https://hangul-game.netlify.app/" target="_blank" class="item" id="instruction">
+            <i class="gamepad icon"></i>
+          Han-Gul Game
+        </a>
+        <a class="item" id="dev_info">
+            <i class="user secret icon"></i>
+          Developer Info.
+        </a>      
+        <a href="https://github.com/rockstartraders?tab=repositories" target="_blank"  class="item">
+            <i class="github icon"></i> 
+          View me via GITHUB
+        </a>
+        <a id="email"  class="item">
+          <i class="envelope outline icon"></i>
+          Send me a Feedback
+        </a> 
+      </div>
+
+    <!--End of Side Navigation -->
+
+   <!--End Main div for Drag and Drop-->
+
+   
+
+
+</div>
+     <!--End of main container-->
+
+
+    <!--This is for Script -->       
+    <script script type="text/javascript" src="/DIST/semantic.min.js"></script>    
+    <script script type="text/javascript" src="/JS/sweetalert2.min.js"></script>
+    <script script type="text/javascript" src="/JS/aromanize.js"></script>
+    <script script type="text/javascript" src="/JS/dragula.min.js"></script>  
+    <script script type="text/javascript" src="/JS/mobile-detect.min.js"></script>  
+    <script script type="text/javascript" src="/JS/confetti.js"></script>  
+    <script script type="text/javascript" src="/JS/email.min.js"></script>  
+    <script script type="text/javascript" src="/JS/main.js"></script>
+</body>
+</html>

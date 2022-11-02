@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />   
+    <meta name="description" content="Learn and familiarize Hangeul spelling and romanization in a fun way.">
+    <meta name="keywords" content="Hangul, Hangeul, Romanization, Jumble Words">
+    <meta name="author" content="James Paul Espeña">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/DIST/semantic.min.css" />
+    <link rel="icon" type="image/x-icon" href="/IMG/hangeul.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&display=swap" rel="stylesheet"/>
+    <title>K-Jumble Game</title>
+
+    <style>
+      body {
+        overflow-y: hidden !important; /* Hide vertical scrollbar */
+        overflow-x: hidden !important; /* Hide horizontal scrollbar */
+      }
+
+      #textWrapper {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: 5rem !important;
+      }
+      #error_message {
+        font-family: "Poppins", sans-serif !important;
+        font-size: 3rem;
+        font-weight: 500;
+        text-align: center;
+        letter-spacing: 0.1rem;
+        text-shadow: -4px 3px 8px rgba(0, 0, 0, 0.16);
+        color: #37474f !important;
+        white-space: nowrap;
+      }
+
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div id="textWrapper">
+        <p id="error_message">Page Error</p>
+      </div>
+      <img src="/IMG/404.png" class="center" />
+    </div>
+  </body>
+</html>

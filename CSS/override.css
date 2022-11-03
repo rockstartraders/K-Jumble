@@ -1,407 +1,361 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700;800;900&display=swap");
 
-#desktop_only{
-    font-family: 'Poppins', sans-serif !important;
-    text-align: justify;
-    font-size: 1.3rem;
-    font-weight: 300 !important;
-    color: #37474f !important;
-   
+#desktop_only {
+  font-family: "Poppins", sans-serif !important;
+  text-align: justify;
+  font-size: 1.3rem;
+  font-weight: 300 !important;
+  color: #37474f !important;
 }
 
-#error404{
-    font-family: 'Poppins', sans-serif !important;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 300 !important;
-    color: #37474f !important;
-    letter-spacing: .1rem;
-   
+#error404 {
+  font-family: "Poppins", sans-serif !important;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300 !important;
+  color: #37474f !important;
+  letter-spacing: 0.1rem;
 }
 
-#invisible{
-    font-size: .1px !important;
-    color: transparent !important;
+#invisible {
+  font-size: 0.1px !important;
+  color: transparent !important;
 }
 
 .wrapper {
+  position: relative;
+}
+
+#left_drag {
+  cursor: -webkit-grab;
+  cursor: grab;
+  background-color: #e0e1e2 !important;
+  height: 7rem !important;
+  padding-top: 3rem;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  border-radius: 4px;
+}
+
+#right_wrapper {
+  margin-top: -4rem;
+  /* background-color: aqua !important;    */
+  background-color: #e0e1e2 !important;
+  height: 8rem;
+  margin-left: 25%;
+  margin-right: 25%;
+  border-radius: 4px;
+}
+
+#right_drag {
+  /* margin: ; */
+
+  cursor: -webkit-grab;
+  cursor: grab;
+  margin-top: 5rem !important;
+  /* background-color: aqua !important;     */
+  height: 50rem;
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  padding-top: 3rem !important;
+}
+
+#container_hangul {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  margin-top: -5rem;
+}
+
+#hangul {
+  /* font-family: "Noto Serif KR", serif; */
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 900;
+  font-size: 13rem;
+  text-shadow: -4px 3px 8px rgba(0, 0, 0, 0.46);
+  color: #37474f !important;
+  white-space: nowrap;
   
-    position: relative;
 }
 
-
-
-#left_drag{   
-    
-    cursor: -webkit-grab; cursor: grab;
-    background-color: #e0e1e2  !important; 
-    height: 7rem !important;
-    padding-top: 3rem;
-    margin: auto;
-    width: 50%;
-    text-align: center;    
-    border-radius: 4px;
-   
+#answers {
+  margin-top: -0.2rem;
+  display: inline-block;
+  font-size: 3.5rem;
+  /* font-family: 'Quicksand', sans-serif; */
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 700;
+  text-align: center;
+  color: #37474f !important;
+  letter-spacing: 0.2rem;
 }
 
-#right_wrapper{
-   margin-top: -4rem;
-   /* background-color: aqua !important;    */
-   background-color: #e0e1e2  !important; 
-   height: 8rem;
-   margin-left: 25%;
-   margin-right: 25%;
-   border-radius: 4px;
-  
+#english_meaning {
+  text-transform: capitalize;
 }
 
-#right_drag{
-
-    /* margin: ; */   
-   
-    cursor: -webkit-grab; cursor: grab;
-    margin-top: 5rem !important;
-    /* background-color: aqua !important;     */
-    height: 50rem;
-    margin: auto;
-    width: 80%;
-    text-align: center;         
-    padding-top: 3rem !important;
-    
-    
+.fa-bars {
+  text-decoration: none;
+  color: #37474f !important;
+  font-size: 2rem;
+  margin-left: 0.7rem;
+  margin-top: 0.7rem;
+  font-weight: 900;
 }
 
-
-#container_hangul{
-    margin: auto;
-    width: 50%;
-    text-align: center;    
+.fa-bars:hover {
+  color: #0e6eb8 !important;
 }
 
-#hangul{
-    font-family: 'Noto Serif KR', serif;
-    font-weight: 900;
-    font-size: 11rem;
-    text-shadow: -4px 3px 8px rgba(0,0,0,0.46);
-    color: #37474f !important;
-    white-space: nowrap;
+.inverted {
+  background-color: #263238 !important;
+  width: auto !important;
 }
 
-#answers{
-    margin-top: -.2rem;
-    display: inline-block;
-    font-size: 3.5rem;
-    /* font-family: 'Quicksand', sans-serif; */
-    font-family: 'Poppins', sans-serif !important;
-    font-weight: 700;
-    text-align: center;
-    color: #37474f !important;
-    letter-spacing: .2rem;
-      
-}
-
-
-#english_meaning{
-    text-transform: capitalize;
-}
-
-
-.fa-bars{
-    text-decoration: none;
-    color: #37474f !important;
-    font-size: 2rem;
-    margin-left: .7rem;
-    margin-top: .7rem;
-    font-weight: 900;
-}
-
-
-.fa-bars:hover{
-    color: #0E6EB8!important;
-
-}
-   
-.inverted{
-    background-color: #263238 !important;
-    width: auto !important;
-    
-}
-
-.item{
-    font-family: 'Poppins', sans-serif !important;
-    letter-spacing: .1rem;
+.item {
+  font-family: "Poppins", sans-serif !important;
+  letter-spacing: 0.1rem;
 }
 
 .fa-person-chalkboard {
-    height: 1em;
-    display: block;
-    font-size: 1.71428571em!important;
-    margin: 0 auto 0.5rem!important;
+  height: 1em;
+  display: block;
+  font-size: 1.71428571em !important;
+  margin: 0 auto 0.5rem !important;
 }
-
 
 /* This is for pushable CSS  || the iritating GRAY box */
 .body.pushable {
-    background: rgba(0, 0, 0, 0.4) !important;
-   
-    /* height: 100%; */
+  background: rgba(0, 0, 0, 0.4) !important;
+
+  /* height: 100%; */
 }
-
-
 
 body.swal2-height-auto {
-    background: rgba(0, 0, 0, 0.2) !important;
-       
+  background: rgba(0, 0, 0, 0.2) !important;
 }
 
-
-
-.circular{
-   
-    margin-left: auto;
-    margin-right: auto;
-   
+.circular {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#dev_img, #dev_img2{
-    width: 12rem !important;
-    height: 11rem !important;
+#dev_img,
+#dev_img2 {
+  width: 12rem !important;
+  height: 11rem !important;
 }
 
-
-
-.swal2-confirm{
-    font-family: 'Poppins', sans-serif !important;
-    letter-spacing: .1rem;
-    background-color: #2185d0 !important;
-    box-shadow: none !important; 
-    width: 10rem;
-    white-space: nowrap;
-    
-} 
+.swal2-confirm {
+  font-family: "Poppins", sans-serif !important;
+  letter-spacing: 0.1rem;
+  background-color: #2185d0 !important;
+  box-shadow: none !important;
+  width: 10rem;
+  white-space: nowrap;
+}
 
 .swal2-deny {
-    font-family: 'Poppins', sans-serif !important;
-    letter-spacing: .1rem;    
-    box-shadow: none !important; 
-    width: 10rem;
-    white-space: nowrap;
+  font-family: "Poppins", sans-serif !important;
+  letter-spacing: 0.1rem;
+  box-shadow: none !important;
+  width: 10rem;
+  white-space: nowrap;
 }
 
-#about_txt{
-    font-family: 'Poppins', sans-serif !important;
-    letter-spacing: .1rem;    
-    text-align: justify;
-    
+#about_txt {
+  font-family: "Poppins", sans-serif !important;
+  letter-spacing: 0.1rem;
+  text-align: justify;
 }
 
-#important_txt{
-    color: #ff7043;
-    font-weight: 800;
+#important_txt {
+  color: #ff7043;
+  font-weight: 800;
 }
 
-#my_name{
-    font-family: 'Poppins', sans-serif !important;
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: 600;
+#my_name {
+  font-family: "Poppins", sans-serif !important;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
-#btn_container{
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+#btn_container {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
-#answer_btn, #helper_btn{
-    width: 15rem;
-    height: 3rem;
-    font-family: 'Poppins', sans-serif !important;
-    text-align: center;
-    letter-spacing: .1rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    white-space: nowrap !important;
+#answer_btn,
+#helper_btn {
+  width: 15rem;
+  height: 3rem;
+  font-family: "Poppins", sans-serif !important;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  white-space: nowrap !important;
 }
 
-
-.swal2-title{
-    font-family: 'Poppins', sans-serif !important;
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: 300 !important;
-    color: #37474f !important;
+.swal2-title {
+  font-family: "Poppins", sans-serif !important;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 300 !important;
+  color: #37474f !important;
 }
 
-#container_attempts{
-    float: right;
-    padding-right: 10rem;
-    margin-top: 1rem;
+#container_attempts {
+  float: right;
+  padding-right: 10rem;
+  margin-top: 1rem;
 }
 
-.fa-xmark{
-   
-   
-   font-weight: 500;
-   color: #37474f !important;
-   font-size: 1rem;
-   font-weight: 800 !important;
-    
+.fa-xmark {
+  font-weight: 500;
+  color: #37474f !important;
+  font-size: 1rem;
+  font-weight: 800 !important;
 }
 
-
-.fa-heart-pulse{
-    font-size: 2.8rem;
-    color: #ef5350;
+.fa-heart-pulse {
+  font-size: 2.8rem;
+  color: #ef5350;
 }
-
 
 /* this is teh css for life and attempt color */
 
-#label_life_new{
-    font-family: 'Prompt', sans-serif;
-    font-size: 2.3rem;
-    font-weight: 600;
-    color: #21ba45;
-    -webkit-text-stroke: 1px #367c46 ;  
-   
+#label_life_new {
+  font-family: "Prompt", sans-serif;
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: #21ba45;
+  -webkit-text-stroke: 1px #367c46;
 }
 
-
-#label_life_less_two{
-    font-family: 'Prompt', sans-serif;
-    font-size: 2.3rem;
-    font-weight: 600;
-    color: #ffbf00;
-    -webkit-text-stroke: 1px #e2aa00 ;  
-   
-   
-    
+#label_life_less_two {
+  font-family: "Prompt", sans-serif;
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: #ffbf00;
+  -webkit-text-stroke: 1px #e2aa00;
 }
 
-#label_life_less_one{
-    font-family: 'Prompt', sans-serif;
-    font-size: 2.3rem;
-    font-weight: 600;
-    color: #ef5350;
-    -webkit-text-stroke: 1px #e4312e ;  
-   
-    
-    
+#label_life_less_one {
+  font-family: "Prompt", sans-serif;
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: #ef5350;
+  -webkit-text-stroke: 1px #e4312e;
 }
 
-#last_attempt{
-    font-family: 'Poppins', sans-serif !important;
-    font-weight: 500;
-    letter-spacing: .1rem;
-    font-size: 1.2rem;
-    text-align: justify;
+#last_attempt {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
+  text-align: justify;
 }
 
-
-#answer_txt{
-    font-family: 'Poppins', sans-serif !important;
-    font-weight: 700;
-    letter-spacing: .3rem;
-    font-size: 1.2rem;
-    color: #ef5350;
+#answer_txt {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  font-size: 1.2rem;
+  color: #ef5350;
 }
 
-
-#english_txt{   
-        font-family: 'Poppins', sans-serif !important;
-        font-weight: 800;
-        letter-spacing: .2rem;
-        font-size: 1.2rem;
-        color: #37474f !important;
-        text-transform: uppercase;
- 
+#english_txt {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+  color: #37474f !important;
+  text-transform: uppercase;
 }
 
-
-#confetti{
-   display: none;
-   width: 100% !important;
+#confetti {
+  display: none;
+  width: 100% !important;
 }
 
-
-
-.swal2-container.swal2-backdrop-show, .swal2-container.swal2-noanimation {
-    background: rgba(0,0,0,.1) !important;
+.swal2-container.swal2-backdrop-show,
+.swal2-container.swal2-noanimation {
+  background: rgba(0, 0, 0, 0.1) !important;
 }
 
-
-#vowel_img{
-    height: 25rem;
-    width: 60rem !important;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-   
+#vowel_img {
+  height: 25rem;
+  width: 60rem !important;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
-.at{
-    color: #37474f !important;
+.at {
+  color: #37474f !important;
 }
 
-#email_input{
-    width: 25rem;
-    font-family: 'Poppins', sans-serif !important;
-    font-weight: 300;
-    letter-spacing: .1rem;
-    color: #37474f !important;
+#email_input {
+  width: 25rem;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  color: #37474f !important;
 }
 
-::placeholder{
-    font-family: 'Poppins', sans-serif !important;
-    font-weight: 300;
-    text-align: center;
-
+::placeholder {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 300;
+  text-align: center;
 }
 
-#msg_container{
-    margin-top: 1rem;
+#msg_container {
+  margin-top: 1rem;
 }
 
-#msg{
-    
-    width: 25rem;
-    height: 15rem;
-    font-family: 'Poppins', sans-serif !important;
-    font-weight: 300;
-    letter-spacing: .1rem;
-    resize: none;
-    border: 1px solid rgba(34, 36, 38, 0.15);
-    border-radius: 4px;
-    color: #37474f !important;
+#msg {
+  width: 25rem;
+  height: 15rem;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  resize: none;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  border-radius: 4px;
+  color: #37474f !important;
 }
 
 #msg:focus {
-    outline: none !important;
-    border:1px solid #cce2ff;
-    box-shadow: 0 0 1px #719ECE;
-  }
+  outline: none !important;
+  border: 1px solid #cce2ff;
+  box-shadow: 0 0 1px #719ece;
+}
 
-  #btn_contact{
-     margin-top: 2rem;
-  }
+#btn_contact {
+  margin-top: 2rem;
+}
 
-  #send_btn{
-    font-family: 'Poppins', sans-serif !important;
-    letter-spacing: .1rem;
-    background-color: #2185d0 !important;
-    box-shadow: none !important; 
-    width: 10rem;
-    white-space: nowrap;
-  }
+#send_btn {
+  font-family: "Poppins", sans-serif !important;
+  letter-spacing: 0.1rem;
+  background-color: #2185d0 !important;
+  box-shadow: none !important;
+  width: 10rem;
+  white-space: nowrap;
+}
 
-  #cancel_btn{
-    font-family: 'Poppins', sans-serif !important;
-    letter-spacing: .1rem;
-    background-color: #db2828 !important;
-    box-shadow: none !important; 
-    width: 10rem;
-    white-space: nowrap;
-  }
+#cancel_btn {
+  font-family: "Poppins", sans-serif !important;
+  letter-spacing: 0.1rem;
+  background-color: #db2828 !important;
+  box-shadow: none !important;
+  width: 10rem;
+  white-space: nowrap;
+}

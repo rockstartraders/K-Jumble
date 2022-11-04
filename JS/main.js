@@ -69,6 +69,7 @@ async function spellbee() {
     document.getElementById("confetti").style.display = "none";
     document.getElementById("left_drag").innerHTML = "";
     document.getElementById("right_drag").innerHTML = "";
+    document.getElementById("hangul").innerHTML = "";
     document.querySelector(".counter").id = "label_life_new"; // will change the Life status back to 3 and Active color Green 
     document.querySelector(".counter").innerHTML = "3"; // will change the Life status back to 3 and Active color Green 
 

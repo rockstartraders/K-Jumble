@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Learn and familiarize Hangeul spelling and romanization in a fun way.">
+  <meta name="keywords" content="Hangul, Hangeul, Romanization, Jumble Words">
+  <meta name="author" content="James Paul Espeña">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/DIST/semantic.min.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css" />
+  <link rel="stylesheet" href="/CSS/dragula.min.css">
+  <link rel="stylesheet" href="/CSS/animate.min.css">
+  <link rel="stylesheet" href="/CSS/override.css">
+  <link rel="stylesheet" href="/CSS/sweetalert2.min.css">
+  <script src="/JS/jquery-3.1.1.min.js"></script>
+  <link rel="icon" type="image/x-icon" href="/IMG/hangeul.jpg">
+
+
+
+  <!--Start of Title-->
+  <title>Spell Me</title>
+</head>
+
+<body onload="word_loader();">
+
+  
+
+  <!-- Hangul Helper-->
+
+  <div id="hangul_helper"></div>
+   <!--Confetti for correct answer-->
+   
+
+    <a href="/Index.html" title="Back to Home Page"><i id="back_btn" class="home icon"></i></a>
+
+    <div id="split_btn">
+      <div class="ui buttons">
+        <button class="ui red button" id="instruction_btn"><i class="info icon"></i>Instruction</button>
+        <div class="or"></div>
+        <button class="ui positive button" id="answer_history"><i class="tasks icon"></i>View Answer History</button>
+      </div>
+    </div>
+   
+    <!--Container for onload data-->
+    <div id="onload_data">
+      <p id="korean"></p>
+      <p id="english"></p>
+      <p id="romanization"></p>
+    </div>
+
+    <div id="main_btn_txtarea">
+        <div class="ui form">
+            <div class="field">
+              <textarea id="hangul_input" rows="3" autocomplete="off" spellcheck=”false” disabled placeholder="Goodluck !!"></textarea>
+            </div>
+          </div>
+
+          <!--<i class="question icon"></i>-->
+           <div id="hangul_btn">
+            <br>
+            <div id="btn_txt_and_sound">
+                <button id="btn_show_romanization" title="Question in Romanize Value" class="ui left attached button"></button>
+                <button id="play_sound" title="Listen to the question" class="ui button"><i class="headphones icon"></i></button>
+                <button id="play_answer" title="Listen or Play your answer before submit" class="right attached ui button"><i class="play icon"></i></button>
+                <br>
+            </div>
+            <div id="hangul_consonant">
+                <br>
+                <br>
+                <button class="ui button" id="hangul_keys" value="ㄱ">ㄱ</button>
+                <button class="ui button" id="hangul_keys" value="ㄴ">ㄴ</button>
+                <button class="ui button" id="hangul_keys" value="ㄷ">ㄷ</button>
+                <button class="ui button" id="hangul_keys" value="ㄹ">ㄹ</button>
+                <button class="ui button" id="hangul_keys" value="ㅁ">ㅁ</button>
+                <button class="ui button" id="hangul_keys" value="ㅂ">ㅂ</button>
+                <button class="ui button" id="hangul_keys" value="ㅅ">ㅅ</button>
+                <button class="ui button" id="hangul_keys" value="ㅇ">ㅇ</button>
+                <button class="ui button" id="hangul_keys" value="ㅈ">ㅈ</button>
+                <button class="ui button" id="hangul_keys" value="ㅊ">ㅊ</button>
+                <button class="ui button" id="hangul_keys" value="ㅋ">ㅋ</button>
+                <button class="ui button" id="hangul_keys" value="ㅌ">ㅌ</button>
+                <button class="ui button" id="hangul_keys" value="ㅍ">ㅍ</button>
+                <button class="ui button" id="hangul_keys" value="ㅎ">ㅎ</button>                
+            </div>
+            <div id="hangul_vowel">
+                <br>
+                <button class="ui button" id="hangul_keys" value="ㅏ">ㅏ</button>
+                <button class="ui button" id="hangul_keys" value="ㅑ">ㅑ</button>
+                <button class="ui button" id="hangul_keys" value="ㅓ">ㅓ</button>
+                <button class="ui button" id="hangul_keys" value="ㅕ">ㅕ</button>
+                <button class="ui button" id="hangul_keys" value="ㅗ">ㅗ</button>
+                <button class="ui button" id="hangul_keys" value="ㅛ">ㅛ</button>
+                <button class="ui button" id="hangul_keys" value="ㅜ">ㅜ</button>
+                <button class="ui button" id="hangul_keys" value="ㅠ">ㅠ</button>
+                <button class="ui button" id="hangul_keys" value="ㅡ">ㅡ</button>
+                <button class="ui button" id="hangul_keys" value="ㅣ">ㅣ</button>                     
+            </div>
+            <div id="hangul_double_consonant">
+                <br>
+                <button class="ui button" id="hangul_keys" value="ㄲ">ㄲ</button>
+                <button class="ui button" id="hangul_keys" value="ㄸ">ㄸ</button>
+                <button class="ui button" id="hangul_keys" value="ㅃ">ㅃ</button>
+                <button class="ui button" id="hangul_keys" value="ㅉ">ㅉ</button>
+                <button class="ui button" id="hangul_keys" value="ㅆ">ㅆ</button>                                 
+            </div>
+            <div id="hangul_complex_vowel">
+                <br>
+                <button class="ui button" id="hangul_keys" value="ㅢ">ㅢ</button>
+                <button class="ui button" id="hangul_keys" value="ㅚ">ㅚ</button>
+                <button class="ui button" id="hangul_keys" value="ㅐ">ㅐ</button>
+                <button class="ui button" id="hangul_keys" value="ㅟ">ㅟ</button>
+                <button class="ui button" id="hangul_keys" value="ㅔ">ㅔ</button>  
+                <button class="ui button" id="hangul_keys" value="ㅒ">ㅒ</button>
+                <button class="ui button" id="hangul_keys" value="ㅖ ">ㅖ</button>
+                <button class="ui button" id="hangul_keys" value="ㅘ">ㅘ</button>
+                <button class="ui button" id="hangul_keys" value="ㅝ">ㅝ </button> 
+                <button class="ui button" id="hangul_keys" value="ㅙ">ㅙ</button>
+                <button class="ui button" id="hangul_keys" value="ㅞ">ㅞ</button>                                                
+            </div>
+            <div id="extra_btn">
+                <br>
+                <button class="ui teal button" id="backspace"><i class="undo alternate icon"></i> Backspace</button>
+                <button class="ui primary button" id="submit_answer"> <i class="paper plane icon"></i> Submit</button>
+                <button class="ui red button" id="Hangeul_Helper"><i class="medkit icon"></i> Hangeul Helper</button>
+                <button class="ui button" id="Surrender"><i class="frown outline icon"></i>I Give up</button>
+                                                              
+            </div>
+
+
+          </div> <!--End of BTN Hangul-->
+
+    </div>
+
+    <!--Container for Incorrect answers-->
+    <div id="incorrectAnswers"></div>
+
+
+
+
+  <!--This is for Script -->
+  <script script type="text/javascript" src="/DIST/semantic.min.js"></script>
+  <script script type="text/javascript" src="/JS/sweetalert2.min.js"></script>
+  <script script type="text/javascript" src="/JS/aromanize.js"></script>
+  <script script type="text/javascript" src="/JS/dragula.min.js"></script>
+  <script script type="text/javascript" src="/JS/mobile-detect.min.js"></script>
+  <script script type="text/javascript" src="/JS/confetti.js"></script>
+  <script script type="text/javascript" src="/JS/hangul.js"></script>
+  <script script type="text/javascript" src="/JS/email.min.js"></script>
+  <script script type="text/javascript" src="/JS/responsivevoice.js"></script>
+  <script script type="text/javascript" src="/JS/spelling.js"></script>
+</body>
+
+</html>
